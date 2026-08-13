@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "back-end",
+  "homepage": "https://github.com/AndersonTaday2001/web_synthetic_turf_field#readme",
+  "bugs": {
+    "url": "https://github.com/AndersonTaday2001/web_synthetic_turf_field/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonTaday2001/web_synthetic_turf_field.git"
+  },
+  "license": "MIT",
+  "author": "Anderson Taday",
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup src/server.ts --format esm --clean --sourcemap",
+    "start": "node --env-file=.env dist/server.js"
+  },
+  "dependencies": {
+    "better-auth": "^1.6.28",
+    "cors": "^2.8.6",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "@types/pg": "^8.21.0",
+    "drizzle-kit": "^0.31.10",
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
+  }
+}
